@@ -1,0 +1,11 @@
+image: circleci/node:8.12.0-browsers
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script: 
+          - yarn install
+          - yarn run lint
+          - yarn run test
