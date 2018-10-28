@@ -1,0 +1,19 @@
+tasks:
+  build:
+    image: circleci/node:8.12.0-browsers
+    command:
+      - yarn
+    args:
+      - install
+  lint:
+    image: circleci/node:8.12.0-browsers
+    command:
+      - yarn
+    args:
+      - lint
+  test:
+    image: circleci/node:8.12.0-browsers
+    command:
+      - yarn
+    args:
+      - test

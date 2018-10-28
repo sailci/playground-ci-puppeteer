@@ -28,7 +28,7 @@ describe('Puppeteer', () => {
       });
     });
     describe('Example.com', async () => {
-      it('should navigate example.com', async function () {
+      it('navigate: should navigate example.com', async function () {
         const ok = await this.example.navigate('http://example.com');
         expect(ok).to.true;
       });
