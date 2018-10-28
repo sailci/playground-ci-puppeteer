@@ -14,6 +14,8 @@ module.exports = {
     'no-loop-func': 'off',
     'func-names': 'off',
     'no-underscore-dangle': 'off',
+    'no-unused-expressions': 0,
+    'chai-friendly/no-unused-expressions': 2,
   },
   globals: {
     config: true,
