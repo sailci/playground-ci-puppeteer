@@ -4,7 +4,7 @@ const example = require('./index');
 
 describe('Puppeteer', () => {
   before(async function () {
-    this.browser = await puppeteer.launch({headless: false});
+    this.browser = await puppeteer.launch({ headless: false });
     this.page = await this.browser.newPage();
   });
 
