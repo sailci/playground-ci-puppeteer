@@ -22,4 +22,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       
       - run: yarn run lint
-      - run: xvfb-run -a --server-args="-screen 0 1024x768x24" yarn run test
+      - run: yarn run test
